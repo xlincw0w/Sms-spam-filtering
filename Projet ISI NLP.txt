@@ -1,0 +1,50 @@
+Sommaire :
+
+Introduction
+Principales notions du domaine
+Etat actuel et les perspectives de recherche
+Technique pratique
+
+
+* Introduction :
+=> Parler de l'historique du traitement automatique du langauge
+
+	- Cette discipline a réellement commencé lors de la guerre froide quand les américains avaient besoin de comprendre les messages russes.
+          Ainsi est né le premier traducteur automatique, très rudimentaire, avec ses 250 mots et ses 6 règles de grammaire. (3)
+
+=> Pourquoi s’intéresser à l’automatisation du traitement du langage naturel
+
+	- d’une part la volonté de modéliser une compétence fascinante (le langage) 
+	  afin de tester des hypothèses sur les mécanismes de la communication humaine 
+	  ou plus généralement sur la nature de la cognition humaine (2)
+
+	- besoin de disposer d’applications capables de traiter efficacement les
+	  monceaux d’informations « naturelles » (documents écrits ou sonores) (2)
+
+* L'evolutivité des programmes de traitement automatique du langauge
+
+* Principales notions du domaine :
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+sources :
+1 - https://towardsdatascience.com/your-guide-to-natural-language-processing-nlp-48ea2511f6e1
+2 - https://perso.limsi.fr/anne/coursM2R/intro.pdf
+3 - https://www.inbenta.com/fr/blog/quest-ce-que-le-tal
