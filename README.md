@@ -1,2 +1,1 @@
-# Email-spam-filtering
-#Kaggle spam-ham mail classification
+# Email spam filtering
