@@ -7,7 +7,16 @@ Technique pratique
 
 
 * Introduction :
-=> Parler de l'historique du traitement automatique du langauge
+
+=> Qu'est ce que le traitement automatique du langage
+	- Le traitement automatique du langage est la capacité pour un programme informatique de "comprendre" le langage humain tel qu'il est parlé.
+	  Il fait partie des technologies d'intelligence artificielle. (6)
+
+	- Test de turing : Le principe du Test de Turing est simple. Un évaluateur humain est chargé de juger une conversation textuelle entre un humain et une machine. 
+	  L’évaluateur sait que l’un des deux participants est une machine, mais ne sait pas lequel. S’il n’est pas en mesure de discerner l’homme de la machine après 5 minutes de conversation,
+	  la machine a passé le test avec succès. (7)
+
+=> Parler de l'historique du traitement automatique du langage
 
 	- Cette discipline a réellement commencé lors de la guerre froide quand les américains avaient besoin de comprendre les messages russes.
           Ainsi est né le premier traducteur automatique, très rudimentaire, avec ses 250 mots et ses 6 règles de grammaire. (3)
@@ -21,30 +30,39 @@ Technique pratique
 	- besoin de disposer d’applications capables de traiter efficacement les
 	  monceaux d’informations « naturelles » (documents écrits ou sonores) (2)
 
-* L'evolutivité des programmes de traitement automatique du langauge
+	- Use cases :
+	  * Speech Recognition (Siri)
+
+* L'evolution et futur du traitement automatique du langage
+
+	- 
+
 
 * Principales notions du domaine :
 
+	- En Traitement Automatique du Langage, deux méthodes peuvent être employées, 
+	  soit de façon indépendante ou hybride : les méthodes statistiques et linguistiques. (3)
+
+	- Méthodes statistiques : Le principe de ces méthodes est de faire de la langue un objet mathématique.
+	  * Identification de langage ( Methode N-Grammes) Pour détecter la langue d’un document, on va observer les fréquences des n-grammes dans le texte (5)
+	  * Nous appliquons alors différentes formules probabilistes et statistiques aux données de la langue 
+		Avantage : Rapides à implémenter, Resultat trés bon
+		Inconvenient : Efficaces que sur des corpus de données de très grandes tailles (3)
+
+	- Méthodes linguistiques : Ces méthodes vont utiliser tous les différents niveaux d’analyse utilisés en linguistique comme la phonétique, la syntaxe ou la sémantique.
+		Avantage : Performance elevé
+		Inconvenient : Coûteuses en temps (3)
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+	- Model Statistiques illustration :
+	
 
 
 sources :
 1 - https://towardsdatascience.com/your-guide-to-natural-language-processing-nlp-48ea2511f6e1
 2 - https://perso.limsi.fr/anne/coursM2R/intro.pdf
 3 - https://www.inbenta.com/fr/blog/quest-ce-que-le-tal
+4 - https://www.xenonstack.com/blog/evolution-of-nlp/
+5 - http://lalic.paris-sorbonne.fr/PAGESPERSO/atanassova/lfa/Cours10.pdf
+6 - https://www.lemagit.fr/definition/Traitement-du-langage-naturel-TLN
+7 - http://www.artificiel.net/test-de-turing
