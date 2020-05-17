@@ -1,3 +1,3 @@
-# Email spam filtering
+# Sms spam filtering
 
 Projet module ISI
