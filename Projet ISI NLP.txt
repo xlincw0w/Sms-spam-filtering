@@ -1,4 +1,4 @@
-Sommaire :
+﻿Sommaire :
 
 Introduction
 Principales notions du domaine
@@ -9,54 +9,124 @@ Technique pratique
 * Introduction :
 
 => Qu'est ce que le traitement automatique du langage
-	- Le traitement automatique du langage est la capacit� pour un programme informatique de "comprendre" le langage humain tel qu'il est parl�.
+	- Le traitement automatique du langage est la capacité d'extraire de l'information de "comprendre" le langage humain tel qu'il est parlé.
 	  Il fait partie des technologies d'intelligence artificielle. (6)
-
-	- Test de turing : Le principe du Test de Turing est simple. Un �valuateur humain est charg� de juger une conversation textuelle entre un humain et une machine. 
-	  L��valuateur sait que l�un des deux participants est une machine, mais ne sait pas lequel. S�il n�est pas en mesure de discerner l�homme de la machine apr�s 5 minutes de conversation,
-	  la machine a pass� le test avec succ�s. (7)
 
 => Parler de l'historique du traitement automatique du langage
 
-	- Cette discipline a r�ellement commenc� lors de la guerre froide quand les am�ricains avaient besoin de comprendre les messages russes.
-          Ainsi est n� le premier traducteur automatique, tr�s rudimentaire, avec ses 250 mots et ses 6 r�gles de grammaire. (3)
+	- En 1950 dans un contexte de guerre froide Les premiers travaux en traitement automatique du langage naturel commencent aux états-unis dans le but d’arriver à comprendre
+	  les communications soviétiques,  c’est durant cette  même année que Alain tuning publie son article fondateur sur l'intelligence artificielle,
+	  « Computing machinery and intelligence»  ou il met  en avant une méthode qui définie la niveau d’intelligence  d’une machine, communément appelé  test de Turing
 
-=> Pourquoi s�int�resser � l�automatisation du traitement du langage naturel
+	- Test de turing : Le principe du Test de Turing est simple. Un évaluateur humain est chargé de juger une conversation textuelle entre un humain et une machine. 
+	  L’évaluateur sait que l’un des deux participants est une machine, mais ne sait pas lequel. S’il n’est pas en mesure de discerner l’homme de la machine après 5 minutes de conversation,
+	  la machine a passé le test avec succès. (7)
 
-	- d�une part la volont� de mod�liser une comp�tence fascinante (le langage) 
-	  afin de tester des hypoth�ses sur les m�canismes de la communication humaine 
-	  ou plus g�n�ralement sur la nature de la cognition humaine (2)
+	- Evolution : En 1966, Joseph Weizenbaum a créé un programme capable de passer le test de Turing. Baptisé ELIZA, ce programme était en mesure d’examiner un texte à la recherche de mots-clés 
+		pour formuler une réponse cohérente. Si aucun mot-clé n’est trouvé, ELIZA répond de façon générique,
+		Au-delà d’imiter un comportement humain, un système devrait être capable de « comprendre » partiellement un texte : pouvoir identifier certains éléments textuels afin de les 
+		associer à des signification .
 
-	- besoin de disposer d�applications capables de traiter efficacement les
-	  monceaux d�informations � naturelles � (documents �crits ou sonores) (2)
+
+=> Pourquoi s’intéresser à l’automatisation du traitement du langage naturel
+
+	- d’une part la volonté de modéliser une compétence fascinante
+	  afin de tester des hypothèses sur les mécanismes de la communication humaine 
+
+	- besoin de disposer d’applications capables de traiter efficacement les
+	  monceaux d’informations « naturelles » (documents écrits ou sonores) (2)
 
 	- Use cases :
-	  * Speech Recognition (Siri)
+	  * Speech Recognition (Siri, Google assistant(Google Duplex)) :
+		Ensemble de methodes permettant de convertir la voix humaine en donnée fiable exploitable par la machine
+		On en a tous envie de pas se penché pour prendre la télécommande mais de dire tous simplement volume faible et le volume baisse
+		!video google assistant appel un salon de coiffure! https://www.youtube.com/watch?v=D5VN56jQMWM
 
-* L'evolution et futur du traitement automatique du langage
+	  * Chatbots :
+		est un logiciel programmé pour simuler une conversation en langage naturel.
+		""" J'ai un probléme de voiture, je contacte RENAULT je pense discuter a un humain mais c'est un robot """
+		    
+	  * Spam filtering :
+		Par définition est un courrier indésirable.
+			Nous avons tous utilisé yahoo, outlook ou gmail on recoit des courriers qu'a peine en lisant le premier mot
+			on zap,	le Traitement automatique du langage resout ce probleme
 
-	- 
-
+	  * Opinion mining ( Sentiment Analysis ) : 
+		L'analyse des sentiments a partir d'une série de mot, de phrases ou d'un article
+		qui peut etre un signal pour la prise de décision
+		""" Pour illustrer une entreprise moyenne voir grande prépare un produit.
+		    Ce futur produit est médiatisé les gens on parle sur twitter ou autre 
+		    L'entreprise a recupéré ces textes chaotiques et voudrais l'analysé 
+		    et avoir un aperçu général sur ce que le monde pense de son produit
+		    et c'est la ou elle découvre que 80% ne s'interesse pas au produit
+		    et a evité a l'entreprise d'inverstir sur un produit qui ne marcherai pas"""
 
 * Principales notions du domaine :
 
-	- En Traitement Automatique du Langage, deux m�thodes peuvent �tre employ�es, 
-	  soit de fa�on ind�pendante ou hybride : les m�thodes statistiques et linguistiques. (3)
+	- Traitement automatique du language = Compréhension du langage + Génération automatique de textes
+		* Compréhension du langage : Ensemble des methodes permettant de donnée un sens au donnée textuelles
+	  * Génération automatique de textes : Génération de texte sensé et cohérent aux language naturel humain
 
-	- M�thodes statistiques : Le principe de ces m�thodes est de faire de la langue un objet math�matique.
-	  * Identification de langage ( Methode N-Grammes) Pour d�tecter la langue d�un document, on va observer les fr�quences des n-grammes dans le texte (5)
-	  * Nous appliquons alors diff�rentes formules probabilistes et statistiques aux donn�es de la langue 
-		Avantage : Rapides � impl�menter, Resultat tr�s bon
-		Inconvenient : Efficaces que sur des corpus de donn�es de tr�s grandes tailles (3)
+	- En Traitement Automatique du Langage, deux méthodes peuvent être employées, 
+	  soit de façon indépendante ou hybride : les méthodes statistiques et linguistiques. (3)
 
-	- M�thodes linguistiques : Ces m�thodes vont utiliser tous les diff�rents niveaux d�analyse utilis�s en linguistique comme la phon�tique, la syntaxe ou la s�mantique.
-		Avantage : Performance elev�
-		Inconvenient : Co�teuses en temps (3)
+	- Méthodes statistiques : Le principe de ces méthodes est de faire de la langue un objet mathématique.
+	  * Identification de langage ( Methode N-Grammes) Pour détecter la langue d’un document, on va observer les fréquences des n-grammes dans le texte (5)
+	  * Nous appliquons alors différentes formules probabilistes et statistiques aux données de la langue 
+		Avantage : Rapides à implémenter, Resultat trés bon
+		Inconvenient : Efficaces que sur des corpus de données de très grandes tailles (3)
 
+	- Méthodes linguistiques : Ces méthodes vont utiliser tous les différents niveaux d’analyse utilisés en linguistique comme la phonétique, la syntaxe ou la sémantique.
+		Avantage : Performance elevé
+		Inconvenient : Coûteuses en temps (3)
+
+		(Ces méthodes vont utiliser tous les différents niveaux d’analyse utilisés en linguistique comme la phonétique, la syntaxe ou la sémantique.
+		Par exemple : l’analyseur syntaxique vu en cours de compilation qui se charge de transformer les instruction écrite dans un langage de haut niveau en Tokens qui peuvent être interpréter par la machine plus tard dans le processus de compilation.
+		Les méthodes linguistiques ont l’avantage d’être très performantes mais elles sont très coûteuses en temps. En effet, constituer des lexiques ou des grammaires pour décrire de façon la plus exhaustive possible une langue peut prendre des années.
+		)
 
 	- Model Statistiques illustration :
-	
+		1 - Traitement du corpus de donnée
+				- Segmentation 
+				- Stopwords
+				- Lemmatisation, Racinisation
 
+			- Création de la matrice creuse (Sparse matrix)
+			- Entrainer un model statistiques
+			- Evaluation
+			- Exploitation 
+
+		Exemple !
+
+
+* Futur du traitement automatique du langage
+		- Chaque jours des milliards de données textuelles sont généré, et c'est données sont exploitable mais pas a leur etat brut
+		  ce qui crée la nécéssité de se penché vers ce domaine.
+
+		  * les experts de l'industrie on predit que la demande TAL est en croissance exponentielle 
+			les entreprises d'aujourd'huit se voit fragilisé sans ces technologies. Elles ont besoins d'analyser et comprendre l'attitude, les envies et l'emotions
+			de leur clients afin de les fidélisés et de monopolisé le marché. (11)
+
+			* Gartner entreprise américaine de conseil estime qu’à l’horizon 2020, 25% des services clients dans le monde utiliseront des chatbots. En 2017,
+				ils n’étaient que 2%. Pourquoi cet engouement ? Tout simplement parce que en s’appuyant sur l’intelligence artificielle,
+				ces nouveaux outils s’imposent pour répondre simplement aux questions et demandes des clients de manière instantanée.
+				A la clé : 
+					- Rapidité d’exécution 
+ 	   			- Satisfaction client,
+ 	   			- Disponibilité 24h/24 7j/7
+
+
+slides :
+
+* Table des matiéres (1)
+* Qu'est ce que le traitement automatique du langage (1)
+* Parler de l'historique du traitement automatique du langage (3)
+* Pourquoi s’intéresser à l’automatisation du traitement du langage naturel (2)
+* Principales notions du domaine (3)
+* Futur du traitement automatique du langage (1)
+* Outro
+
+Sum : 12 slides
 
 sources :
 1 - https://towardsdatascience.com/your-guide-to-natural-language-processing-nlp-48ea2511f6e1
@@ -66,3 +136,9 @@ sources :
 5 - http://lalic.paris-sorbonne.fr/PAGESPERSO/atanassova/lfa/Cours10.pdf
 6 - https://www.lemagit.fr/definition/Traitement-du-langage-naturel-TLN
 7 - http://www.artificiel.net/test-de-turing
+8 - https://medium.com/fintechexplained/sentimental-analysis-an-introduction-7fc21d9b8625
+9 - https://www.lefigaro.fr/secteur/high-tech/pratique/2017/06/08/32002-20170608ARTFIG00180-qu-est-ce-qu-un-chatbot.php
+10 - https://towardsdatascience.com/why-nlp-is-important-and-itll-be-the-future-our-future-59d7b1600dda
+11 - https://www.dataversity.net/future-nlp-data-science/
+12 - https://towardsdatascience.com/nlp-vs-nlu-vs-nlg-know-what-you-are-trying-to-achieve-nlp-engine-part-1-1487a2c8b696
+13 - https://medium.com/sciforce/a-comprehensive-guide-to-natural-language-generation-dd63a4b6e548
